@@ -1,0 +1,44 @@
+<html>
+
+  <head>
+
+    <script type="text/javascript" src="main.js"></script>
+
+  </head>
+
+  <body>
+
+    <p>Please Enter Total Bill Amount:</p>
+    <input type="text" id="tbill">
+ 
+
+    <p>How was the service?</p>
+    <select id="servquality">
+
+      <option value="0.10">Below Average: 10%</option>
+      <option value="0.15">Average: 15%</option>
+      <option value="0.20">Good: 20%</option>
+
+    </select>
+
+ 
+    <p>How many quests? (Max split 4 people)</p>
+
+    <select id="tguest">
+
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+
+    </select>
+
+      <br>
+      <br>
+    
+    <button onclick="calctip(document.getElementById('tbill').value,document.getElementById('servquality').value, document.getElementById('tguest').value)">Primeiro</button>
+        
+
+    <p id="result"></p>
+  </body>
+</html>
